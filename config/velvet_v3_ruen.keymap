@@ -173,7 +173,7 @@
         cp_edt_tab: cp_edt_tab {
             compatible = "zmk,behavior-mod-morph";
             label = "CP_EDT_TAB";
-            bindings = <&ltk 4 CAPSLOCK>, <&kp TAB>;
+            bindings = <&ltk 4 TAB>, <&kp CAPSLOCK>;
 
             #binding-cells = <0>;
             mods = <(MOD_RSFT|MOD_LSFT|MOD_RCTL|MOD_LCTL|MOD_LALT|MOD_LGUI)>;
