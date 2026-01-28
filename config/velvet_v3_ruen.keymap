@@ -14,15 +14,12 @@
             bindings =
                 <&to 0>,
                 <&macro_press>,
-                <&kp LGUI>,
-                <&macro_press>,
-                <&kp SPACE>,
+                <&kp LGUI &kp SPACE>,
                 <&macro_wait_time 400>,
+                <&macro_tap>,
                 <&kp N2>,
                 <&macro_release>,
-                <&kp SPACE>,
-                <&macro_release>,
-                <&kp LGUI>;
+                <&kp SPACE &kp LGUI>;
 
             label = "LAYER_EN";
             wait-ms = <0>;
@@ -91,15 +88,12 @@
             bindings =
                 <&to 1>,
                 <&macro_press>,
-                <&kp LGUI>,
-                <&macro_press>,
-                <&kp SPACE>,
+                <&kp LGUI &kp SPACE>,
                 <&macro_wait_time 400>,
+                <&macro_tap>,
                 <&kp N1>,
                 <&macro_release>,
-                <&kp SPACE>,
-                <&macro_release>,
-                <&kp LGUI>;
+                <&kp SPACE &kp LGUI>;
 
             label = "LAYER_RU";
             wait-ms = <0>;
@@ -265,10 +259,10 @@
         fn-nav-en {
             display-name = "fn_nav";
             bindings = <
-&kp ESC  &kp F1   &kp F2   &kp F3   &kp F4   &kp F5                         &cmd_f15 LS(F)  &kp LC(LEFT)   &kp UP          &kp LC(RIGHT)    &kp HOME    &none
-&kp TAB  &kp F6   &kp F7   &kp F8   &kp F9   &kp F10                        &none           &kp LEFT       &kp DOWN        &kp RIGHT        &kp END     &kp DOUBLE_QUOTES
-&none    &kp F11  &kp F12  &kp F13  &kp F14  &kp F15                        &cmd_f15 F      &kp BACKSPACE  &kp PAGE_DOWN   &kp PG_UP        &kp DELETE  &ru RU_NUMERO
-                  &kp LT   &kp GT   &none    &none    &kp ESC    &kp ENTER  &ltk 2 SPACE    &none          &kp LEFT_BRACE  &kp RIGHT_BRACE
+&kp ESC  &kp F1   &kp F2   &kp F3   &kp F4   &kp F5                         &kp LS(PAGE_UP)  &kp LC(LEFT)   &kp UP          &kp LC(RIGHT)    &kp HOME  &none
+&kp TAB  &kp F6   &kp F7   &kp F8   &kp F9   &kp F10                        &kp PAGE_DOWN    &kp LEFT       &kp LC(ENTER)   &kp RIGHT        &kp END   &kp DOUBLE_QUOTES
+&none    &kp F11  &kp F12  &kp F13  &kp F14  &kp F15                        &cmd_f15 F       &kp BACKSPACE  &kp DOWN        &kp DELETE       &none     &ru RU_NUMERO
+                  &kp LT   &kp GT   &none    &none    &kp ESC    &kp ENTER  &ltk 2 SPACE     &none          &kp LEFT_BRACE  &kp RIGHT_BRACE
             >;
         };
 
