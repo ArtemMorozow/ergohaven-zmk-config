@@ -11,21 +11,17 @@
         layer_en: layer_en {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 0>, <&macro_tap>, <&kp RG(SPACE)>;
+            bindings =
+                <&to 0>,
+                <&macro_press>,
+                <&kp LGUI &kp SPACE>,
+                <&macro_wait_time 400>,
+                <&kp N2>,
+                <&macro_release>;
 
             label = "LAYER_EN";
             wait-ms = <0>;
             tap-ms = <50>;
-        };
-
-        layer_ru: layer_ru {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&to 1>, <&macro_tap>, <&kp LG(SPACE)>;
-
-            label = "LAYER_RU";
-            tap-ms = <50>;
-            wait-ms = <0>;
         };
 
         en: en {
@@ -112,6 +108,22 @@
             label = "RU";
             wait-ms = <0>;
             tap-ms = <30>;
+        };
+
+        layer_ru: layer_ru {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&to 0>,
+                <&macro_press>,
+                <&kp LGUI &kp SPACE>,
+                <&macro_wait_time 400>,
+                <&kp N1>,
+                <&macro_release>;
+
+            label = "LAYER_RU";
+            wait-ms = <0>;
+            tap-ms = <50>;
         };
     };
 
