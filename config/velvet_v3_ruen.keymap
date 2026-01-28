@@ -11,7 +11,7 @@
         layer_en: layer_en {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 0>, <&macro_tap>, <&kp LS(LC(N1))>;
+            bindings = <&to 0>, <&macro_tap>, <&kp RG(SPACE)>;
 
             label = "LAYER_EN";
             wait-ms = <0>;
@@ -21,7 +21,7 @@
         layer_ru: layer_ru {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 1>, <&macro_tap>, <&kp LS(LC(N2))>;
+            bindings = <&to 1>, <&macro_tap>, <&kp LG(SPACE)>;
 
             label = "LAYER_RU";
             tap-ms = <50>;
