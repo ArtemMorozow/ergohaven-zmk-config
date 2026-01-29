@@ -211,10 +211,10 @@
         edit {
             display-name = "edit";
             bindings = <
-&none  &none  &none  &none  &none  &none                      &kp PAGE_UP    &kp LC(LS(LEFT))  &kp LS(UP)          &kp LC(LS(RIGHT))  &kp LS(HOME)  &none
-&none  &none  &none  &none  &none  &none                      &kp PAGE_DOWN  &kp LS(LEFT)      &kp LC(ENTER)       &kp LS(RIGHT)      &kp LS(END)   &none
-&none  &none  &none  &none  &none  &none                      &none          &kp BACKSPACE     &kp LS(DOWN_ARROW)  &kp DELETE         &none         &none
-              &none  &none  &none  &none  &none    &kp ENTER  &kp SPACE      &none             &none               &none
+&none  &none  &none  &none  &none  &none                      &kp PAGE_UP    &kp LC(LS(LEFT))  &kp LS(UP)     &kp LC(LS(RIGHT))  &kp LS(HOME)  &none
+&none  &none  &none  &none  &none  &none                      &kp PAGE_DOWN  &kp LS(LEFT)      &kp LS(DOWN)   &kp LS(RIGHT)      &kp LS(END)   &none
+&none  &none  &none  &none  &none  &none                      &none          &kp BACKSPACE     &kp LC(ENTER)  &kp DELETE         &none         &none
+              &none  &none  &none  &none  &none    &kp ENTER  &kp SPACE      &none             &none          &none
             >;
         };
 
@@ -222,8 +222,8 @@
             display-name = "fn_nav";
             bindings = <
 &kp ESC  &kp F1   &kp F2   &kp F3   &kp F4   &kp F5                         &kp LS(PAGE_UP)  &kp LC(LEFT)   &kp UP          &kp LC(RIGHT)    &kp HOME  &none
-&kp TAB  &kp F6   &kp F7   &kp F8   &kp F9   &kp F10                        &kp PAGE_DOWN    &kp LEFT       &kp LC(ENTER)   &kp RIGHT        &kp END   &kp DOUBLE_QUOTES
-&none    &kp F11  &kp F12  &kp F13  &kp F14  &kp F15                        &cmd_f15 F       &kp BACKSPACE  &kp DOWN        &kp DELETE       &none     &ru RU_NUMERO
+&kp TAB  &kp F6   &kp F7   &kp F8   &kp F9   &kp F10                        &kp PAGE_DOWN    &kp LEFT       &kp DOWN        &kp RIGHT        &kp END   &kp DOUBLE_QUOTES
+&none    &kp F11  &kp F12  &kp F13  &kp F14  &kp F15                        &cmd_f15 F       &kp BACKSPACE  &kp LC(ENTER)   &kp DELETE       &none     &none
                   &kp LT   &kp GT   &none    &none    &kp ESC    &kp ENTER  &ltk 2 SPACE     &none          &kp LEFT_BRACE  &kp RIGHT_BRACE
             >;
         };
