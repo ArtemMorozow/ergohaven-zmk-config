@@ -5,7 +5,19 @@
 #include <dt-bindings/zmk/outputs.h>
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        ctrl+shift+up {
+            bindings = <&kp LC(LS(UP))>;
+            key-positions = <8 9 8 9 8 9 8 9>;
+        };
+
+        ctrl+shift+down {
+            bindings = <&kp LC(DOWN)>;
+            key-positions = <32 33>;
+        };
+    };
 
     macros {
         layer_en: layer_en {
