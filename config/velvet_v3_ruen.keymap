@@ -19,6 +19,30 @@
             key-positions = <32 33>;
             layers = <0 1>;
         };
+
+        shift+alt+up {
+            bindings = <&kp LS(LA(UP))>;
+            key-positions = <7 8>;
+            layers = <0 1>;
+        };
+
+        shift+alt+down {
+            bindings = <&kp LS(LA(DOWN))>;
+            key-positions = <31 32>;
+            layers = <0 1>;
+        };
+
+        ctrl+page_up {
+            bindings = <&kp LC(PAGE_UP)>;
+            key-positions = <19 20>;
+            layers = <0 1>;
+        };
+
+        ctrl+page_down {
+            bindings = <&kp LC(PAGE_DOWN)>;
+            key-positions = <21 22>;
+            layers = <0 1>;
+        };
     };
 
     macros {
