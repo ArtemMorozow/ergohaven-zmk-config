@@ -8,12 +8,6 @@
     combos {
         compatible = "zmk,combos";
 
-        ctrl+shift+up {
-            bindings = <&kp LC(LS(UP))>;
-            key-positions = <8 9 8 9 8 9 8 9>;
-            layers = <0 1>;
-        };
-
         ctrl+shift+down {
             bindings = <&kp LC(LS(DOWN))>;
             key-positions = <32 33>;
@@ -34,14 +28,25 @@
 
         ctrl+page_up {
             bindings = <&kp LC(PAGE_UP)>;
-            key-positions = <19 20>;
+            key-positions = <19 8>;
             layers = <0 1>;
         };
 
         ctrl+page_down {
             bindings = <&kp LC(PAGE_DOWN)>;
-            key-positions = <21 22>;
+            key-positions = <21 8>;
             layers = <0 1>;
+        };
+
+        ctrl+shift+up {
+            bindings = <&kp LC(LS(UP))>;
+            key-positions = <8 9>;
+            layers = <0 1>;
+        };
+
+        sleep {
+            bindings = <&kp LG(L)>;
+            key-positions = <11 23 35>;
         };
     };
 
