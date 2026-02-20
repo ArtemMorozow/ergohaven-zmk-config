@@ -11,7 +11,7 @@
         ctrl+shift+down {
             bindings = <&kp LC(LS(DOWN))>;
             key-positions = <32 33>;
-            layers = <5 6>;
+            layers = <5 6 0 1>;
         };
 
         shift+alt+up {
@@ -41,7 +41,7 @@
         ctrl+shift+up {
             bindings = <&kp LC(LS(UP))>;
             key-positions = <8 9>;
-            layers = <5 6>;
+            layers = <5 6 0 1>;
         };
 
         sleep {
@@ -49,6 +49,7 @@
             key-positions = <11 23 35>;
             layers = <0 1>;
             timeout-ms = <500>;
+            slow-release;
         };
     };
 
