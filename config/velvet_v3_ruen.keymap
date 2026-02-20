@@ -11,43 +11,44 @@
         ctrl+shift+down {
             bindings = <&kp LC(LS(DOWN))>;
             key-positions = <32 33>;
-            layers = <4>;
+            layers = <5 6>;
         };
 
         shift+alt+up {
             bindings = <&kp LS(LA(UP))>;
             key-positions = <7 8>;
-            layers = <4>;
+            layers = <5 6>;
         };
 
         shift+alt+down {
             bindings = <&kp LS(LA(DOWN))>;
             key-positions = <31 32>;
-            layers = <4>;
+            layers = <5 6>;
         };
 
         ctrl+page_up {
             bindings = <&kp LC(PAGE_UP)>;
             key-positions = <19 8>;
-            layers = <4>;
+            layers = <5 6>;
         };
 
         ctrl+page_down {
             bindings = <&kp LC(PAGE_DOWN)>;
             key-positions = <21 8>;
-            layers = <4>;
+            layers = <5 6>;
         };
 
         ctrl+shift+up {
             bindings = <&kp LC(LS(UP))>;
             key-positions = <8 9>;
-            layers = <4>;
+            layers = <5 6>;
         };
 
         sleep {
             bindings = <&kp LG(L)>;
             key-positions = <11 23 35>;
             layers = <0 1>;
+            timeout-ms = <500>;
         };
     };
 
