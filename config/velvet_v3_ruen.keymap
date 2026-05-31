@@ -231,10 +231,10 @@
         en {
             display-name = "En";
             bindings = <
-&kp ESC    &kp Q  &kp W             &kp E             &kp R              &kp T                                                   &kp Y         &kp U                           &kp I           &kp O            &kp P      &kp K_FIND
-&kp TAB    &kp A  &kp S             &kp D             &kp F              &kp G                                                   &kp H         &kp J                           &kp K           &kp L            &kp SEMI   &kp CAPSLOCK
-&layer_ru  &kp Z  &kp X             &kp C             &kp V              &kp B                                                   &kp N         &kp M                           &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp QMARK  &kp SLASH
-                  &kp LEFT_CONTROL  &kp LEFT_COMMAND  &ltk 4 UNDERSCORE  &ltk 5 SPACE  &ltk 8 ENTER    &kp_sk LEFT_ALT LEFT_ALT  &ltk 2 SPACE  &kp_sk RIGHT_SHIFT RIGHT_SHIFT  &kp COMMA       &kp DOT
+&kp ESC    &kp Q  &kp W           &kp E         &kp R                             &kp T                                            &kp Y         &kp U                             &kp I           &kp O            &kp P      &kp K_FIND
+&kp TAB    &kp A  &kp S           &kp D         &kp F                             &kp G                                            &kp H         &kp J                             &kp K           &kp L            &kp SEMI   &kp CAPSLOCK
+&layer_ru  &kp Z  &kp X           &kp C         &kp V                             &kp B                                            &kp N         &kp M                             &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp QMARK  &kp SLASH
+                  &kp LEFT_SHIFT  &kp LEFT_ALT  &kp_sk LEFT_COMMAND LEFT_COMMAND  &ltk 5 SPACE  &ltk 4 UNDERSCORE    &ltk 9 MINUS  &ltk 2 SPACE  &kp_sk LEFT_CONTROL LEFT_CONTROL  &kp COMMA       &kp DOT
             >;
         };
 
@@ -243,8 +243,8 @@
             bindings = <
 &trans     &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U   &kp RU_CYRILLIC_KA  &kp RU_CYRILLIC_IE                    &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA  &kp RU_CYRILLIC_SHCHA  &kp RU_CYRILLIC_ZE   &kp RU_CYRILLIC_HA
 &trans     &kp RU_CYRILLIC_EF       &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_A   &kp RU_CYRILLIC_PE                    &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O          &kp RU_CYRILLIC_EL   &kp RU_CYRILLIC_DE     &kp RU_CYRILLIC_ZHE  &kp RU_CYRILLIC_E
-&layer_en  &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_I                     &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE   &kp RU_CYRILLIC_YU     &kp RU_QUESTION      &kp RU_CYRILLIC_HARD_SIGN
-                                    &kp LEFT_CONTROL      &kp LEFT_COMMAND    &trans              &trans              &trans    &trans  &trans              &trans                     &kp RU_COMMA         &kp RU_DOT
+&layer_en  &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_I                     &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE   &kp RU_CYRILLIC_YU     &trans               &kp RU_CYRILLIC_HARD_SIGN
+                                    &trans                &trans              &trans              &trans              &trans    &trans  &trans              &trans                     &trans               &trans
             >;
         };
 
@@ -271,7 +271,7 @@
         edit {
             display-name = "edit";
             bindings = <
-&none  &none  &none  &none  &none  &none                      &kp PAGE_UP    &kp LC(LS(LEFT))  &kp LS(UP)     &kp LC(LS(RIGHT))  &kp LS(HOME)  &none
+&none  &none  &none  &none  &none  &none                      &kp PAGE_UP    &kp LS(LA(LEFT))  &kp LS(UP)     &kp LS(LA(RIGHT))  &kp LS(HOME)  &none
 &none  &none  &none  &none  &none  &none                      &kp PAGE_DOWN  &kp LS(LEFT)      &kp LS(DOWN)   &kp LS(RIGHT)      &kp LS(END)   &none
 &none  &none  &none  &none  &none  &none                      &none          &kp BACKSPACE     &kp LC(ENTER)  &kp DELETE         &none         &none
               &none  &none  &none  &none  &none    &kp ENTER  &kp SPACE      &none             &none          &none
@@ -281,9 +281,9 @@
         fn-nav-en {
             display-name = "fn_nav";
             bindings = <
-&kp ESC  &kp F1   &kp F2   &kp F3   &kp F4   &kp F5                         &kp PAGE_UP    &kp LC(LEFT)   &kp UP          &kp LC(RIGHT)    &kp HOME  &none
+&kp ESC  &kp F1   &kp F2   &kp F3   &kp F4   &kp F5                         &kp PAGE_UP    &kp LA(LEFT)   &kp UP          &kp LA(RIGHT)    &kp HOME  &none
 &kp TAB  &kp F6   &kp F7   &kp F8   &kp F9   &kp F10                        &kp PAGE_DOWN  &kp LEFT       &kp DOWN        &kp RIGHT        &kp END   &kp DOUBLE_QUOTES
-&none    &kp F11  &kp F12  &kp F13  &kp F14  &kp F15                        &cmd_f15 F     &kp BACKSPACE  &kp LC(ENTER)   &kp DELETE       &none     &none
+&none    &kp F11  &kp F12  &kp F13  &kp F14  &kp F15                        &cmd_f15 F     &kp BACKSPACE  &kp LG(ENTER)   &kp DELETE       &none     &none
                   &kp LT   &kp GT   &none    &none    &kp ESC    &kp ENTER  &ltk 2 SPACE   &none          &kp LEFT_BRACE  &kp RIGHT_BRACE
             >;
         };
@@ -314,6 +314,15 @@
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &multi_line_sel_down  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans                &trans  &trans  &trans
                 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans                &trans
+            >;
+        };
+
+        os-shortcuts {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
