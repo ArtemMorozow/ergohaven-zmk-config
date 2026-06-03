@@ -9,47 +9,54 @@
         compatible = "zmk,combos";
 
         ctrl+shift+down {
-            bindings = <&kp LC(LS(DOWN))>;
+            bindings = <&kp LA(LG(DOWN))>;
             key-positions = <32 33>;
             layers = <5 6 0 1>;
         };
 
         shift+alt+up {
-            bindings = <&kp LS(LA(UP))>;
+            bindings = <&kp LA(UP)>;
             key-positions = <7 8>;
             layers = <5 6>;
         };
 
         shift+alt+down {
-            bindings = <&kp LS(LA(DOWN))>;
+            bindings = <&kp LA(DOWN)>;
             key-positions = <31 32>;
             layers = <5 6>;
         };
 
         ctrl+page_up {
-            bindings = <&kp LC(PAGE_UP)>;
+            bindings = <&kp LG(LA(LEFT_ARROW))>;
             key-positions = <19 8>;
             layers = <5 6>;
         };
 
         ctrl+page_down {
-            bindings = <&kp LC(PAGE_DOWN)>;
+            bindings = <&kp LG(LA(RIGHT_ARROW))>;
             key-positions = <21 8>;
             layers = <5 6>;
         };
 
         ctrl+shift+up {
-            bindings = <&kp LC(LS(UP))>;
+            bindings = <&kp LG(LA(UP))>;
             key-positions = <8 9>;
             layers = <5 6 0 1>;
         };
 
-        sleep {
-            bindings = <&kp LG(L)>;
-            key-positions = <11 23 35>;
-            layers = <0 1>;
-            timeout-ms = <500>;
-            slow-release;
+        shift_layer {
+            bindings = <&lt 4 A>;
+            key-positions = <40 41>;
+        };
+
+        left_desktop {
+            bindings = <&kp LC(LEFT_ARROW)>;
+            key-positions = <3 14>;
+        };
+
+        right_desktop {
+            bindings = <&kp LC(RIGHT_ARROW)>;
+            key-positions = <3 16>;
         };
     };
 
@@ -231,10 +238,10 @@
         en {
             display-name = "En";
             bindings = <
-&kp ESC       &kp Q  &kp W         &kp E      &kp R                             &kp T                                               &kp Y         &kp U                             &kp I           &kp O            &kp P      &kp LG(SPACE)
-&kp TAB       &kp A  &kp S         &kp D      &kp F                             &kp G                                               &kp H         &kp J                             &kp K           &kp L            &kp SEMI   &kp DQT
-&kp LEFT_ALT  &kp Z  &kp X         &kp C      &kp V                             &kp B                                               &kp N         &kp M                             &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp QMARK  &kp SLASH
-                     &ltk 8 GRAVE  &layer_ru  &kp_sk LEFT_COMMAND LEFT_COMMAND  &ltk 5 SPACE  &kp LEFT_SHIFT    &ltk 4 RIGHT_SHIFT  &ltk 2 SPACE  &kp_sk LEFT_CONTROL LEFT_CONTROL  &kp COMMA       &ltk 9 DOT
+&kp ESC       &kp Q  &kp W      &kp E      &kp R                             &kp T                                           &kp Y         &kp U                             &kp I           &kp O            &kp P      &kp LG(SPACE)
+&kp TAB       &kp A  &kp S      &kp D      &kp F                             &kp G                                           &kp H         &kp J                             &kp K           &kp L            &kp SEMI   &kp DQT
+&kp LEFT_ALT  &kp Z  &kp X      &kp C      &kp V                             &kp B                                           &kp N         &kp M                             &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp QMARK  &kp SLASH
+                     &kp GRAVE  &layer_ru  &kp_sk LEFT_COMMAND LEFT_COMMAND  &ltk 5 SPACE  &kp LEFT_SHIFT    &kp LEFT_SHIFT  &ltk 2 SPACE  &kp_sk LEFT_CONTROL LEFT_CONTROL  &kp COMMA       &kp DOT
             >;
         };
 
@@ -305,24 +312,6 @@
 &out OUT_BLE  &cmd_f15 F6   &cmd_f15 F7   &cmd_f15 F8   &cmd_f15 F9   &cmd_f15 F10                  &none          &none              &none             &none            &none       &out OUT_USB
 &bt BT_CLR    &cmd_f15 F11  &cmd_f15 F12  &cmd_f15 F13  &cmd_f15 F14  &cmd_f15 F15                  &kp LG(LS(S))  &kp C_VOLUME_DOWN  &kp C_MUTE        &kp C_VOLUME_UP  &kp INSERT  &none
                             &bt BT_SEL 0  &bt BT_SEL 1  &none         &trans        &none    &none  &trans         &none              &bt BT_SEL 2      &bt BT_SEL 3
-            >;
-        };
-
-        vs-shortcuts {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                     &trans      &kp LG(LA(LEFT))  &multi_line_sel_up    &kp LG(LA(RIGHT_ARROW))  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                     &trans      &trans            &multi_line_sel_down  &trans                   &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                     &trans      &trans            &trans                &trans                   &trans  &trans
-                &trans  &trans  &trans  &trans  &trans    &kp F12  &kp LG(F7)  &trans            &trans                &trans
-            >;
-        };
-
-        os-shortcuts {
-            bindings = <
-&trans  &trans  &trans              &kp LC(UP)    &trans               &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp LC(LEFT_ARROW)  &kp LC(DOWN)  &kp LC(RIGHT_ARROW)  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans              &trans        &trans               &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-                &trans              &trans        &kp LC(LG(F))        &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
