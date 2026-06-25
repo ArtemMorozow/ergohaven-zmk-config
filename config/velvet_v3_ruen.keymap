@@ -58,6 +58,16 @@
             bindings = <&kp LC(RIGHT_ARROW)>;
             key-positions = <3 16>;
         };
+
+        up_desktop {
+            bindings = <&kp LC(UP)>;
+            key-positions = <4 3>;
+        };
+
+        down_desktop {
+            bindings = <&kp LC(DOWN)>;
+            key-positions = <27 28>;
+        };
     };
 
     macros {
