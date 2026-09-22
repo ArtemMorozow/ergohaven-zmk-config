@@ -3,6 +3,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/pointing.h>
 
 / {
     combos {
@@ -67,6 +68,11 @@
         down_desktop {
             bindings = <&kp LC(DOWN)>;
             key-positions = <27 28>;
+        };
+
+        to_mouse_movement {
+            bindings = <&tog 8>;
+            key-positions = <44 45>;
         };
     };
 
@@ -322,6 +328,15 @@
 &out OUT_BLE  &cmd_f15 F6   &cmd_f15 F7   &cmd_f15 F8   &cmd_f15 F9   &cmd_f15 F10                  &none          &none              &none             &none            &none       &out OUT_USB
 &bt BT_CLR    &cmd_f15 F11  &cmd_f15 F12  &cmd_f15 F13  &cmd_f15 F14  &cmd_f15 F15                  &kp LG(LS(S))  &kp C_VOLUME_DOWN  &kp C_MUTE        &kp C_VOLUME_UP  &kp INSERT  &none
                             &bt BT_SEL 0  &bt BT_SEL 1  &none         &trans        &none    &none  &trans         &none              &bt BT_SEL 2      &bt BT_SEL 3
+            >;
+        };
+
+        Mouse {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans          &mmv MOVE_UP    &trans           &trans           &tog 8
+&trans  &trans  &trans  &trans  &trans  &trans                    &msc SCRL_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_RIGHT  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans          &trans          &trans           &trans           &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &msc SCRL_DOWN  &msc SCRL_DOWN  &trans          &trans
             >;
         };
     };
