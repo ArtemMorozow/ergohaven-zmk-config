@@ -74,6 +74,11 @@
             bindings = <&tog 8>;
             key-positions = <44 45>;
         };
+
+        Colemak-DH {
+            bindings = <&tog 9>;
+            key-positions = <36 37>;
+        };
     };
 
     macros {
@@ -337,6 +342,15 @@
 &trans  &trans  &trans  &trans  &trans  &trans                    &msc SCRL_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_RIGHT  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans          &trans          &trans           &trans           &trans
                 &trans  &trans  &trans  &trans  &trans    &trans  &msc SCRL_DOWN  &msc SCRL_DOWN  &trans          &trans
+            >;
+        };
+
+        Colemak {
+            bindings = <
+&kp ESC       &kp Q  &kp W   &kp F      &kp P             &kp B                                            &kp J         &kp L             &kp U           &kp Y            &kp SEMI   &trans
+&kp TAB       &kp A  &kp R   &kp S      &kp T             &kp G                                            &kp M         &kp N             &kp E           &kp I            &kp O      &kp DQT
+&kp LEFT_ALT  &kp Z  &kp X   &kp C      &kp D             &kp V                                            &kp K         &kp H             &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp QMARK  &kp FSLH
+                     &trans  &layer_ru  &kp LEFT_COMMAND  &ltk 5 SPACE  &kp LEFT_SHIFT    &kp RIGHT_SHIFT  &ltk 2 SPACE  &kp LEFT_CONTROL  &kp COMMA       &kp DOT
             >;
         };
     };
