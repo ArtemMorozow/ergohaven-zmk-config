@@ -219,8 +219,9 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <235>;
-            quick-tap-ms = <175>;
-            flavor = "balanced";
+            // Resolve layer holds on the next key press, even after a recent space tap.
+            quick-tap-ms = <0>;
+            flavor = "hold-preferred";
         };
 
         kp_sk: kp_sk {
